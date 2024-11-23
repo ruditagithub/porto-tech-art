@@ -264,17 +264,17 @@ span {
 
 /* Section SKill */
 
-/* Section Services */
-/* .services {
+/* Section project */
+/* .project {
   background: var(--scnd-bg-color);
 } */
-.services h2 {
+.project h2 {
   margin-bottom: 5rem;
 
   text-align: center;
 }
 
-.services-container {
+.project-container {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -282,7 +282,7 @@ span {
   gap: 2rem;
 }
 
-.services-container .services-box {
+.project-container .project-box {
   flex: 1 1 30rem;
   background: var(--scnd-bg-color);
   padding: 6rem 2rem 6rem;
@@ -292,31 +292,31 @@ span {
   transition: 0.3 ease;
 }
 
-.services-container .services-box:hover {
+.project-container .project-box:hover {
   border-color: var(--main-color);
   transform: scale(1.02);
 }
 
-.services-box i {
+.project-box i {
   font-size: 7rem;
   color: var(--main-color);
 }
 
-.services-box h3 {
+.project-box h3 {
   font-size: 2.6rem;
 }
-.services-box p {
+.project-box p {
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
 }
-/* Section Services */
+/* Section project */
 
-/* Testimonial Section*/
-.testimonial {
+/* education Section*/
+.education {
   background: var(--scnd-bg-color);
 }
 
-.testimonial-box {
+.education-box {
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -324,11 +324,11 @@ span {
   flex-direction: column;
 }
 
-.testimonial .heading {
+.education .heading {
   margin-bottom: 5rem;
 }
 
-.testimonial-box img {
+.education-box img {
   width: 15rem;
   height: 15rem;
   border-radius: 25%;
@@ -342,7 +342,7 @@ span {
   gap: 3rem;
 }
 
-.testimonial-item {
+.education-item {
   min-height: 450px;
   max-width: 450px;
   background: var(--bg-color);
@@ -361,22 +361,22 @@ span {
   border-radius: 2rem;
 }
 
-.testimonial-item:hover {
+.education-item:hover {
   border-color: var(--main-color);
   transform: scale(1.03);
 }
-.testimonial-item h2 {
+.education-item h2 {
   font-size: 3rem;
   text-align: center;
 }
 
-.testimonial-item p {
+.education-item p {
   font-size: 1.8rem;
   text-align: center;
 }
 
 
-/* Testimonial Section*/
+/* education Section*/
 
 /* Contant Section */
 .contact {
@@ -492,11 +492,11 @@ span {
     padding: 10rem 3%;
   }
 
-  .services {
+  .project {
     padding: 7rem;
   }
 
-  .testimonial .wrapper {
+  .education .wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -557,7 +557,7 @@ span {
     margin-top: 4rem;
   }
 
-  .services h2 {
+  .project h2 {
     margin-bottom: 3rem;
   }
 }

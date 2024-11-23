@@ -3,11 +3,18 @@ const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
 // Show or hide the button based on scroll position
 window.onscroll = function() {
+    // Check scroll position
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         scrollToTopBtn.style.display = "flex"; // Show button
     } else {
         scrollToTopBtn.style.display = "none"; // Hide button
     }
+
+    // Close the navbar if it's open
+    let menu = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+    menu.classList.remove('bx-x');
+    navbar.classList.remove('active');
 };
 
 // Scroll to top function
@@ -18,17 +25,11 @@ function scrollToTop() {
     });
 }
 
-// Memu
+// Menu toggle
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-let menu =document.querySelector('#menu-icon');
-let navbar =document.querySelector('.navbar');
-
-menu.onclick = () =>{
-    menu.classList.toggle('bx-x')
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
     navbar.classList.toggle('active');
-}
-
-window.onscroll = () => {
-    menu.classList.remove('bx-x');
-    navbar.classList.remove('active');
 }
